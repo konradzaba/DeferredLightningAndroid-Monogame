@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97BF9DFF-84F5-4F78-899A-FEA2D74025DD}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DeferredLightingAndroid</RootNamespace>
+    <AssemblyName>DeferredLightingAndroid</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidStoreUncompressedFileExtensions>.m4a</AndroidStoreUncompressedFileExtensions>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;ANDROID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;ANDROID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity1.cs" />
+    <Compile Include="Camera.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="QuadRenderComponent.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scene.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Drawable\Icon.png" />
+    <AndroidResource Include="Resources\Values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Effects\ClearGBuffer.mgfx" />
+    <AndroidAsset Include="Assets\Data\Effects\CombineFinal.mgfx" />
+    <AndroidAsset Include="Assets\Data\Effects\DirectionalLight.mgfx" />
+    <AndroidAsset Include="Assets\Data\Effects\PointLight.mgfx" />
+    <AndroidAsset Include="Assets\Data\Effects\RenderGBuffer.mgfx" />
+    <None Include="Content\Content.mgcb" />
+    <AndroidAsset Include="Content\Data\lizardeye_diff_0.xnb" />
+    <AndroidAsset Include="Content\Data\lizard_diff_0.xnb" />
+    <AndroidAsset Include="Content\Data\Models\eye_geo_s.xnb" />
+    <AndroidAsset Include="Content\Data\Models\Ground.xnb" />
+    <AndroidAsset Include="Content\Data\Models\ground_diffuse.xnb" />
+    <AndroidAsset Include="Content\Data\Models\ground_diffuse_0.xnb" />
+    <AndroidAsset Include="Content\Data\Models\ground_normal.xnb" />
+    <AndroidAsset Include="Content\Data\Models\ground_normal_0.xnb" />
+    <AndroidAsset Include="Content\Data\Models\ground_specular.xnb" />
+    <AndroidAsset Include="Content\Data\Models\ground_specular_0.xnb" />
+    <AndroidAsset Include="Content\Data\Models\lizard.xnb" />
+    <AndroidAsset Include="Content\Data\Models\lizardeye_diff.xnb" />
+    <AndroidAsset Include="Content\Data\Models\lizardeye_norm.xnb" />
+    <AndroidAsset Include="Content\Data\Models\lizard_diff.xnb" />
+    <AndroidAsset Include="Content\Data\Models\lizard_geo_s.xnb" />
+    <AndroidAsset Include="Content\Data\Models\lizard_norm.xnb" />
+    <AndroidAsset Include="Content\Data\Models\rock_diff.xnb" />
+    <AndroidAsset Include="Content\Data\Models\rock_geo_s.xnb" />
+    <AndroidAsset Include="Content\Data\Models\rock_norm.xnb" />
+    <AndroidAsset Include="Content\Data\Models\ship1.xnb" />
+    <AndroidAsset Include="Content\Data\Models\ship1_c.xnb" />
+    <AndroidAsset Include="Content\Data\Models\ship1_n.xnb" />
+    <AndroidAsset Include="Content\Data\Models\ship1_s.xnb" />
+    <AndroidAsset Include="Content\Data\Models\ship2.xnb" />
+    <AndroidAsset Include="Content\Data\Models\ship2_c.xnb" />
+    <AndroidAsset Include="Content\Data\Models\ship2_n.xnb" />
+    <AndroidAsset Include="Content\Data\Models\ship2_s.xnb" />
+    <AndroidAsset Include="Content\Data\Models\sphere.xnb" />
+    <AndroidAsset Include="Content\Data\null_normal.xnb" />
+    <AndroidAsset Include="Content\Data\null_specular.xnb" />
+    <AndroidAsset Include="Content\Data\rock_diff_0.xnb" />
+    <AndroidAsset Include="Content\Data\ship1_c_0.xnb" />
+    <AndroidAsset Include="Content\Data\ship2_c_0.xnb" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" Visible="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
+    <PackageReference Include="MonoGame.Framework.Android" Version="3.8.0.1641" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Effects\org\ClearGBuffer.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Effects\org\CombineFinal.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Effects\org\DirectionalLight.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Effects\org\PointLight.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Data\Effects\org\RenderGBuffer.fx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>

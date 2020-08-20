@@ -1,0 +1,208 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Content\Data\Effects\BillBoard.mgfx" />
+    <None Remove="Content\Data\Effects\ClearGBuffer.mgfx" />
+    <None Remove="Content\Data\Effects\CombineFinal.mgfx" />
+    <None Remove="Content\Data\Effects\DirectionalLight.mgfx" />
+    <None Remove="Content\Data\Effects\PointLight.mgfx" />
+    <None Remove="Content\Data\Effects\RenderGBuffer.mgfx" />
+    <None Remove="Content\Data\lizardeye_diff_0.xnb" />
+    <None Remove="Content\Data\lizard_diff_0.xnb" />
+    <None Remove="Content\Data\Models\BOX01.xnb" />
+    <None Remove="Content\Data\Models\BOX01_0.xnb" />
+    <None Remove="Content\Data\Models\BOX01_NORM.xnb" />
+    <None Remove="Content\Data\Models\BOX01_SPEC.xnb" />
+    <None Remove="Content\Data\Models\crate.xnb" />
+    <None Remove="Content\Data\Models\eye_geo_s.xnb" />
+    <None Remove="Content\Data\Models\Ground.xnb" />
+    <None Remove="Content\Data\Models\ground_diffuse.xnb" />
+    <None Remove="Content\Data\Models\ground_diffuse_0.xnb" />
+    <None Remove="Content\Data\Models\ground_normal.xnb" />
+    <None Remove="Content\Data\Models\ground_normal_0.xnb" />
+    <None Remove="Content\Data\Models\ground_specular.xnb" />
+    <None Remove="Content\Data\Models\ground_specular_0.xnb" />
+    <None Remove="Content\Data\Models\lizard.xnb" />
+    <None Remove="Content\Data\Models\lizardeye_diff.xnb" />
+    <None Remove="Content\Data\Models\lizardeye_norm.xnb" />
+    <None Remove="Content\Data\Models\lizard_diff.xnb" />
+    <None Remove="Content\Data\Models\lizard_geo_s.xnb" />
+    <None Remove="Content\Data\Models\lizard_norm.xnb" />
+    <None Remove="Content\Data\Models\rock_diff.xnb" />
+    <None Remove="Content\Data\Models\rock_geo_s.xnb" />
+    <None Remove="Content\Data\Models\rock_norm.xnb" />
+    <None Remove="Content\Data\Models\ship1.xnb" />
+    <None Remove="Content\Data\Models\ship1_c.xnb" />
+    <None Remove="Content\Data\Models\ship1_n.xnb" />
+    <None Remove="Content\Data\Models\ship1_s.xnb" />
+    <None Remove="Content\Data\Models\ship2.xnb" />
+    <None Remove="Content\Data\Models\ship2_c.xnb" />
+    <None Remove="Content\Data\Models\ship2_n.xnb" />
+    <None Remove="Content\Data\Models\ship2_s.xnb" />
+    <None Remove="Content\Data\Models\sphere.xnb" />
+    <None Remove="Content\Data\null_normal.xnb" />
+    <None Remove="Content\Data\null_specular.xnb" />
+    <None Remove="Content\Data\rock_diff_0.xnb" />
+    <None Remove="Content\Data\ship1_c_0.xnb" />
+    <None Remove="Content\Data\ship2_c_0.xnb" />
+    <None Remove="Icon.ico" />
+    <None Remove="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Data\Effects\BillBoard.mgfx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Effects\ClearGBuffer.mgfx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Effects\CombineFinal.mgfx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Effects\DirectionalLight.mgfx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Effects\PointLight.mgfx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Effects\RenderGBuffer.mgfx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\lizardeye_diff_0.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\lizard_diff_0.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\BOX01.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\BOX01_0.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\BOX01_NORM.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\BOX01_SPEC.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\crate.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\eye_geo_s.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\Ground.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\ground_diffuse.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\ground_diffuse_0.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\ground_normal.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\ground_normal_0.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\ground_specular.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\ground_specular_0.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\lizard.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\lizardeye_diff.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\lizardeye_norm.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\lizard_diff.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\lizard_geo_s.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\lizard_norm.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\rock_diff.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\rock_geo_s.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\rock_norm.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\ship1.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\ship1_c.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\ship1_n.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\ship1_s.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\ship2.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\ship2_c.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\ship2_n.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\ship2_s.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\Models\sphere.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\null_normal.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\null_specular.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\rock_diff_0.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\ship1_c_0.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Data\ship2_c_0.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icon.ico" />
+    <EmbeddedResource Include="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <TrimmerRootAssembly Include="Microsoft.Xna.Framework.Content.ContentTypeReader" Visible="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641" />
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
+  </ItemGroup>
+</Project>
